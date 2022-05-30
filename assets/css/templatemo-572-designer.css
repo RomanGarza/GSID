@@ -1,10 +1,7 @@
-/*
-
-TemplateMo 572 Designer
-
-https://templatemo.com/tm-572-designer
-
-*/
+:root {
+  --clr-primary-1: #729664;
+  
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -57,7 +54,7 @@ button.main-button {
   text-transform: capitalize;
   font-weight: 400;
   color: #ffffff;
-  background-color: #ff565b;
+  background-color: var(--clr-primary-1);
   padding: 11px 25px;
   border-radius: 7.5px;
   display: inline-block;
@@ -76,7 +73,7 @@ button.main-button:hover {
   text-transform: capitalize;
   font-weight: 400;
   color: #ffffff;
-  background-color: #ff565b;
+  background-color:  var(--clr-primary-1);
   padding: 11px 25px;
   border-radius: 7.5px;
   display: inline-block;
@@ -92,7 +89,7 @@ button.main-button:hover {
   font-size: 14px;
   text-transform: capitalize;
   font-weight: 400;
-  color: #ff565b;
+  color:  var(--clr-primary-1);
   background-color: #ffffff;
   padding: 11px 25px;
   border-radius: 7.5px;
@@ -103,7 +100,7 @@ button.main-button:hover {
 
 .white-button a:hover {
   color: #ffffff;
-  background-color: #ff565b;
+  background-color:  var(--clr-primary-1);
 }
 
 section {
@@ -140,17 +137,17 @@ section {
   }
 }
 
-.section-heading h2 em {
-  color: #ff565b;
+.section-heading h5 em {
+  color: var(--clr-primary-1);
   font-style: normal;
   padding-left: 100px;
   position: relative;
 }
 
-.section-heading h2 em::before {
+.section-heading h5 em::before {
   width: 80px;
   height: 2px;
-  background-color: #ff565b;
+  background-color: var(--clr-primary-1);
   content: '';
   position: absolute;
   left: 0;
@@ -177,7 +174,7 @@ section {
 
 .loader svg path,
 .loader svg rect {
-  fill: #ff565b;
+  fill: var(--clr-primary-1);
 }
 
 .main-navigation {
@@ -208,7 +205,7 @@ header.nav-scrolled .main-navigation {
   padding: 10px 0px;
   position: fixed;
   z-index: 222;
-  background-color: #2a2a2a;
+  background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
@@ -225,6 +222,7 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .nav-link {
   border-top: none;
   padding: 8px 15px;
   font-weight: 300;
+  color: black;
   letter-spacing: 0.5px;
 }
 
@@ -283,34 +281,37 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .active {
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link {
-  color: #ffffff;
-  font-size: 15px;
+  color: white;
+  font-size: 20px;
   font-weight: 400;
   padding: 12px 20px;
-  font-weight: 400;
   border-top: 2px solid transparent;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link:hover {
-  color: #ff565b;
+  color: var(--clr-primary-1);
 }
-
+/* nav bar light background */
 .navbar-light .navbar-nav .nav-item .active {
   font-weight: 400;
-  color: #ff565b;
+  color: white;
   background-color: transparent;
   border-radius: 0px;
   border-top: none;
 }
+/* nav bar light background when hover*/
+.navbar-light .navbar-nav .nav-item .active:hover {
+color: black;
+}
 
 @media (min-width: 992px) {
   .navbar-light .navbar-nav .nav-item .active {
-    background-color: #ffffff;
+    background-color: var(--clr-primary-1);
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-    border-top: 2px solid #ff565b;
+    border-top: 2px solid var(--clr-primary-1);
   }
 }
 
@@ -358,7 +359,7 @@ button:focus:not(:focus-visible) {
 
 .main-banner h2 em {
   font-style: normal;
-  color: #ff565b;
+  color: var(--clr-primary-1);
 }
 
 .search-form {
@@ -478,7 +479,7 @@ section.explore-work .right-content ul li ul.info li h6 a {
 }
 
 section.explore-work .right-content ul li ul.info li h6 a:hover {
-  color: #ff565b;
+  color: var(--clr-primary-1);
 }
 
 section.explore-work .right-content ul li ul.info li em {
@@ -758,7 +759,7 @@ footer ul.info li a {
 }
 
 footer ul.info li a:hover {
-  color: #ff565b;
+  color: var(--clr-primary-1);
 }
 
 footer ul.info li:last-child {
@@ -782,7 +783,7 @@ footer ul.social-links li a svg {
 }
 
 footer ul.social-links li a:hover {
-  color: #ff565b;
+  color: var(--clr-primary-1);
 }
 
 footer ul.social-links li:last-child {
@@ -821,7 +822,7 @@ footer form#subscribe button {
 }
 
 footer form#subscribe button:hover {
-  color: #ff565b;
+  color: var(--clr-primary-1);
 }
 
 footer .sub-footer {
@@ -830,7 +831,7 @@ footer .sub-footer {
 }
 
 footer .sub-footer p a {
-  color: #ff565b;
+  color: var(--clr-primary-1);
 }
 
 footer .sub-footer a.scroll-to-top {
@@ -838,7 +839,7 @@ footer .sub-footer a.scroll-to-top {
   width: 100%;
   display: inline-block;
   font-size: 15px;
-  color: #ff565b;
+  color: var(--clr-primary-1);
   -webkit-transition: all .5s;
   transition: all .5s;
 }
@@ -855,7 +856,7 @@ footer .sub-footer a.scroll-to-top svg {
 }
 
 footer .sub-footer a.scroll-to-top:hover {
-  color: #ff565b;
+  color: var(--clr-primary-1);
 }
 
 .page-banner {
@@ -891,7 +892,7 @@ footer .sub-footer a.scroll-to-top:hover {
 
 .page-banner h2 em {
   font-style: normal;
-  color: #ff565b;
+  color: var(--clr-primary-1);
 }
 
 .page-banner p {
@@ -919,7 +920,7 @@ footer .sub-footer a.scroll-to-top:hover {
 }
 
 .services .service-item .icon {
-  fill: #ff565b;
+  fill: var(--clr-primary-1);
 }
 
 .services .service-item h4 {
@@ -1055,7 +1056,7 @@ section.interior-design .right-content .accordion-body {
   position: absolute;
   left: 30px;
   top: -20px;
-  fill: #ff565b;
+  fill: var(--clr-primary-1);
 }
 
 .what-they-say .testimonial-item h4 {
@@ -1122,7 +1123,7 @@ section.interior-design .right-content .accordion-body {
 
 .what-they-say .carousel-indicators .active {
   opacity: 1;
-  background-color: #ff565b;
+  background-color: var(--clr-primary-1);
 }
 
 .call-to-action {
@@ -1301,7 +1302,7 @@ section.explore-item .projects-pagination .right-content h6 {
 }
 
 section.explore-item .projects-pagination .right-content h6:hover {
-  color: #ff565b;
+  color: var(--clr-primary-1);
 }
 
 section.explore-item .projects-pagination .right-content span {
@@ -1339,7 +1340,7 @@ section.explore-item .projects-pagination .left-content h6 {
 }
 
 section.explore-item .projects-pagination .left-content h6:hover {
-  color: #ff565b;
+  color: var(--clr-primary-1);
 }
 
 section.explore-item .projects-pagination .left-content span {
@@ -1393,7 +1394,7 @@ section.trending-page .trending-item .thumb {
 }
 
 section.trending-page .trending-item .thumb span.banner {
-  background-color: #ff565b;
+  background-color: var(--clr-primary-1);
   color: #ffffff;
   font-size: 14px;
   padding: 10px 16px;
@@ -1419,7 +1420,7 @@ section.trending-page .trending-item .thumb .hover-effect .inner-content {
   padding: 20px 30px;
   border-bottom-left-radius: 7.5px;
   border-bottom-right-radius: 7.5px;
-  background-color: #ff565b;
+  background-color: var(--clr-primary-1);
 }
 
 section.trending-page .trending-item .thumb .hover-effect .inner-content h4 {
@@ -1537,7 +1538,7 @@ section.contact-us-page .right-info ul li {
   width: 100%;
   padding: 30px;
   border-radius: 7.5px;
-  background-color: #ff565b;
+  background-color: var(--clr-primary-1);
   text-align: center;
   margin-bottom: 30px;
 }
